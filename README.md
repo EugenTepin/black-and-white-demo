@@ -26,6 +26,14 @@ __16.06.2019__
 
 Initial environment setup. 
 
+__17.06.2019__
 
+- "Header" section completed for "mobile" breakpoint. (HTML, CSS)
+- "Menu" section completed for "mobile" breakpoint. (HTML, CSS)
 
+__18.06.2019__
 
+- "Menu" section completed for "mobile" breakpoint. (js)
+- "What we do" section completed for "mobile" breakpoint. (HTML, CSS)
+- "Lists and Descriptions" section completed for "mobile" breakpoint. (HTML, CSS)
+- "Form" section completed for "mobile" breakpoint. (HTML, CSS)

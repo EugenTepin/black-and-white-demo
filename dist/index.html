@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Cardo:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/hamburger.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -25,17 +26,157 @@
       </nav>
     </header>
     <div class="slider">
-
+      <!-- Insert content here -->
     </div>
+    <nav class="menu">
+      <div class="menu__panel">
+        <span class="menu__text">Menu</span>
+        <button class="hamburger hamburger--boring is-active" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Work</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Blog</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      </ul>
+    </nav>
   </div>
+  <article class="article">
+    <section class="article__lead">
+      <h1>What we do</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Beatae ratione illum, eius consectetur saepe et culpa officia sed iste laborum
+        quisquam, recusandae <em>laboriosam voluptatem libero</em> cupiditate,
+        exercitationem excepturi consequuntur magni nulla quis corrupti!
+        Impedit, laboriosam aut mollitia tenetur eveniet aspernatur enim!
+        <strong> Quis ipsam, commodi nam aperiam id voluptate</strong> praesentium maxime?</p>
+      <blockqoute>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, id.</blockqoute>
+    </section>
+    <section class="article__gallery">
+      <h3>Images</h3>
+      <div class="gallery">
+        <div class="gallery__wrapper"><img class="gallery__image" src="./img/img1.jpg" alt=""></div>
+        <div class="gallery__wrapper"><img class="gallery__image" src="./img/img2.jpg" alt=""></div>
+        <div class="gallery__wrapper"><img class="gallery__image" src="./img/img3.jpg" alt=""></div>
+        <div class="gallery__wrapper"><img class="gallery__image" src="./img/img4.jpg" alt=""></div>
+      </div>
+    </section>
+    <section class="article__lists">
+      <h3>Lists and Descriptions</h3>
+      <ul>
+        <li>Sed ut perspiciatis unde omnis iste natus</li>
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>At vero eos et accusamus et iusto odio</li>
+        <li>Et harum quidem rerum facilis est</li>
+      </ul>
 
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+      <ol>
+        <li>Sed ut perspiciatis unde omnis iste natus</li>
+        <li>Lorem ipsum dolor sit amet, consectetur</li>
+        <li>At vero eos et accusamus et iusto odio</li>
+        <li>Et harum quidem rerum facilis est</li>
+      </ol>
+      <dl>
+        <dt>Sed ut perspiciatis unde omnis iste natus</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur</dd>
+        <dt>At vero eos et accusamus et iusto odio</dt>
+        <dd>Et harum quidem rerum facilis est</dd>
+      </dl>
+
+    </section>
+
+
+    <section class="article__table">
+      <h3>Table</h3>
+      <!-- <table>
+        <thead>
+          <tr>
+            <th>Lorem</th>
+            <th>Sed ut perspiciatis unde1</th>
+            <th>Sed ut perspiciatis unde2</th>
+            <th>Sed ut perspiciatis unde3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+          </tr>
+          <tr>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+          </tr>
+          <tr>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+          </tr>
+          <tr>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+            <td>At vero eos et</td>
+          </tr>
+        </tbody>
+      </table> -->
+
+    </section>
+    <section class="article__form">
+      <h3>Forms</h3>
+      <form class="form" action="#">
+
+        <label class="form__label form__label_column">
+          <div class="form__label-text">Text:</div>
+          <input class="form__text" type="text">
+        </label>
+
+        <label class="form__label form__label_column">
+          <div class="form__label-text">Select:</div>
+          <select class="form__select" name="select" id="select">
+            <option value="option">Option</option>
+          </select>
+        </label>
+        <label class="form__label form__label_row">
+          <input class="form__checkbox" type="checkbox">
+          <div class="form__label-text-checkbox">Sed ut perspiciatis unde omnis iste natus</div>
+        </label>
+
+        <label class="form__label form__label_row">
+          <input class="form__checkbox" type="radio">
+          <div class="form__label-text-checkbox">Lorem ipsum dolor sit amet, consectetur</div>
+        </label>
+
+        <label class="form__label form__label_column">
+          <div class="form__label-text">Textarea:</div>
+          <textarea class="form__textarea" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+        </label>
+        <label class="form__label form__label_row form__label_justify-center ">
+          <button class="form__button">Button</button>
+        </label>
+      </form>
+    </section>
+  </article>
+
   <!-- <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/main.js"></script>
 
 
 </body>
