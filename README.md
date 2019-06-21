@@ -37,3 +37,7 @@ __18.06.2019__
 - "What we do" section completed for "mobile" breakpoint. (HTML, CSS)
 - "Lists and Descriptions" section completed for "mobile" breakpoint. (HTML, CSS)
 - "Form" section completed for "mobile" breakpoint. (HTML, CSS)
+
+__21.06.2019__
+
+- Everything that wasn't finished. LOL

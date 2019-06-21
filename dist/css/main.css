@@ -11,13 +11,26 @@ html, body {
   box-sizing: border-box;
 }
 
+a, button {
+  cursor: pointer;
+}
+
+.main {
+  background: linear-gradient(90deg, #e7e7e7 3px, transparent 1%) center, linear-gradient(#e7e7e7 3px, transparent 1%) center, #fff;
+  background-size: 4px 4px;
+}
+
 /* Header section*/
+
+header {
+  background-color: #1c1c1c;
+  width: 100%;
+}
 
 .header {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background-color: #1c1c1c;
   padding: 0.5em;
 }
 
@@ -71,7 +84,27 @@ html, body {
 .slider {
   width: 100%;
   background-color: #000;
+}
+
+.slider__item {
+  position: relative;
+}
+
+.slider__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__descr {
+  color: #fff;
+  position: absolute;
+  width: 100%;
   padding: 0.5em;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu {
@@ -117,6 +150,7 @@ html, body {
 }
 
 .article {
+  background-color: #fff;
   min-width: 100%;
   /* min-height: 100%; */
   width: 100%;
@@ -147,12 +181,17 @@ html, body {
   margin-right: 0.5em;
 }
 
+.article__lists {
+  display: flex;
+  flex-direction: column;
+}
+
 .article ul, .article ol, .article dl {
   margin: 0;
   padding: 1em;
 }
 
-.article ul>li, .article ol>li {}
+/* .article ul>li, .article ol>li {} */
 
 .article dl>dt {
   font-weight: bold;
@@ -167,14 +206,16 @@ html, body {
 .gallery {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .gallery__wrapper {
   background-color: #e2e2e2;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   padding: 1em;
-  width: 85vw;
+  max-width: 242px;
   margin: 0.5em;
 }
 
@@ -183,14 +224,101 @@ html, body {
   width: 100%
 }
 
-.article__lists {
+/* .article__table {} */
+
+.shadow {
+  width: 90vw;
+  box-shadow: -71px 2px 72px -45px rgba(0, 0, 0, 0.49) inset;
+  -webkit-box-shadow: -71px 2px 72px -45px rgba(0, 0, 0, 0.49) inset;
+  -moz-box-shadow: -71px 2px 72px -45px rgba(0, 0, 0, 0.49) inset;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  display: flex;
+  flex-direction: row;
+}
+
+.table>thead {
+  width: 40%;
+}
+
+.table>tbody {
+  /* overflow: scroll; */
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+}
+
+.table tr {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.table td, .table th {
+  height: 20vh;
+  border: 1px solid #d5d5d5;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.table th {
+  background: #ddd;
+}
+
+tbody td {
+  width: 8em;
+}
+
+/* .article__table {}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table__header {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.table__row {
   display: flex;
   flex-direction: column;
 }
 
-.article__table {}
+.table_cell {
+  border: 1px solid #d5d5d5;
+  padding: 0.5em;
+  position: relative;
+  padding-left: 40%;
+  height: 4em;
+}
 
-.article__form {}
+.table__row:nth-of-type(odd) {
+  background: #eee;
+}
+
+td:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  background-color: #eee;
+  border-right: 1px solid #d5d5d5;
+  padding: 0.5em;
+  overflow: visible;
+  content: attr(data-label);
+} */
+
+/* .article__form {} */
 
 .form {
   width: 100%;
@@ -246,6 +374,13 @@ html, body {
   width: 100%;
 }
 
+.form__buttom-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.5em;
+}
+
 .form__button {
   background-color: #000;
   color: #fff;
@@ -254,33 +389,12 @@ html, body {
   font-weight: bold;
 }
 
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-  display: none !important;
+.footer {
+  background-color: transparent;
+  color: #656565;
+  padding: 0.5em;
 }
 
-/*
-* Clearfix: contain floats
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-
-.clearfix:before, .clearfix:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-
-.clearfix:after {
-  clear: both;
+.easter-egg {
+  display: none;
 }

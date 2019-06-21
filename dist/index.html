@@ -9,25 +9,52 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/hamburger.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/queries.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 </head>
 
 <body>
 
   <div class="main">
-    <header class="header">
-      <div class="logo">
-        <div class="logo__main">Black<span class="logo__and">and</span>White</div>
-        <div class="logo__sub">Lorem ipsum dolor sit amets</div>
+
+    <!-- Header section -->
+    <header>
+      <div class="header">
+        <div class="logo">
+          <div class="logo__main">Black<span class="logo__and">and</span>White</div>
+          <div class="logo__sub">Lorem ipsum dolor sit amets</div>
+        </div>
+        <nav class="search">
+          <form class="search__form" action="#">
+            <input class="search__input" type="text">
+            <button class="search__button">Search</button></form>
+        </nav>
       </div>
-      <nav class="search">
-        <form class="search__form" action="#">
-          <input class="search__input" type="text">
-          <button class="search__button">Search</button></form>
-      </nav>
     </header>
+
+    <!-- Slider section -->
     <div class="slider">
-      <!-- Insert content here -->
+      <div class="slider__item">
+        <div class="slider__img">
+          <img src="./img/car01.jpg?a=12" alt="">
+        </div>
+        <div class="slider__descr">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, quae?</p>
+        </div>
+      </div>
+      <div class="slider__item">
+        <div class="slider__img">
+          <img src="./img/car02.jpg?a=11" alt="">
+        </div>
+        <div class="slider__descr">
+          <p> Amet consectetur adipisicing elit. Lorem ipsum dolor sit, Corrupti, quae?</p>
+        </div>
+      </div>
     </div>
+
+    <!-- Menu section -->
     <nav class="menu">
       <div class="menu__panel">
         <span class="menu__text">Menu</span>
@@ -45,137 +72,150 @@
         <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
       </ul>
     </nav>
+
+
+    <!-- Content section -->
+    <article class="article">
+
+      <!-- Text section -->
+      <section class="article__lead">
+        <h1>What we do</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <a href="#">Beatae ratione illum</a>, eius consectetur saepe et culpa officia sed iste laborum
+          quisquam, recusandae <em>laboriosam voluptatem libero</em> cupiditate,
+          exercitationem excepturi consequuntur magni nulla quis corrupti!
+          Impedit, laboriosam aut mollitia tenetur eveniet aspernatur enim!
+          <strong> Quis ipsam, commodi nam aperiam id voluptate</strong> praesentium maxime?</p>
+        <blockqoute>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, id.</blockqoute>
+      </section>
+
+      <!-- Gallery section -->
+      <section class="article__gallery">
+        <h3>Images</h3>
+        <div class="gallery">
+          <div class="gallery__wrapper"><img class="gallery__image" src="./img/img1.jpg" alt=""></div>
+          <div class="gallery__wrapper"><img class="gallery__image" src="./img/img2.jpg" alt=""></div>
+          <div class="gallery__wrapper"><img class="gallery__image" src="./img/img3.jpg" alt=""></div>
+          <div class="gallery__wrapper"><img class="gallery__image" src="./img/img4.jpg" alt=""></div>
+        </div>
+      </section>
+
+      <!-- Lists section -->
+      <section>
+        <h3>Lists and Descriptions</h3>
+        <div class="article__lists">
+          <ul>
+            <li>Sed ut perspiciatis unde omnis iste natus</li>
+            <li>Lorem ipsum dolor sit amet, consectetur</li>
+            <li>At vero eos et accusamus et iusto odio</li>
+            <li>Et harum quidem rerum facilis est</li>
+          </ul>
+
+          <ol>
+            <li>Sed ut perspiciatis unde omnis iste natus</li>
+            <li>Lorem ipsum dolor sit amet, consectetur</li>
+            <li>At vero eos et accusamus et iusto odio</li>
+            <li>Et harum quidem rerum facilis est</li>
+          </ol>
+          <dl>
+            <dt>Sed ut perspiciatis unde omnis iste natus</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur</dd>
+            <dt>At vero eos et accusamus et iusto odio</dt>
+            <dd>Et harum quidem rerum facilis est</dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- Table section -->
+      <section class="article__table">
+        <h3>Table</h3>
+        <div class="shadow">
+          <table class="table">
+            <thead class="table__header">
+              <tr class="table__row">
+                <th class="table_cell">Lorem</th>
+                <th class="table_cell">Sed ut perspiciatis unde1</th>
+                <th class="table_cell">Sed ut perspiciatis unde2</th>
+                <th class="table_cell">Sed ut perspiciatis unde3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table__row">
+                <td class="table_cell">At vero eos et0</td>
+                <td class="table_cell">At vero eos et1</td>
+                <td class="table_cell">At vero eos et2</td>
+                <td class="table_cell">At vero eos et3</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table_cell">At vero eos et0</td>
+                <td class="table_cell">Lorem ipsum dolor sit amet.1</td>
+                <td class="table_cell">At vero eos et2</td>
+                <td class="table_cell">At vero eos et3</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table_cell">At vero eos et0</td>
+                <td class="table_cell">At vero eos et1</td>
+                <td class="table_cell">At vero eos et2</td>
+                <td class="table_cell">At vero eos et3</td>
+              </tr>
+              <tr class="table__row">
+                <td class="table_cell">At vero eos et0</td>
+                <td class="table_cell">At vero eos et1</td>
+                <td class="table_cell">At vero eos et2</td>
+                <td class="table_cell">At vero eos et3</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Form section -->
+      <section class="article__form">
+        <h3>Forms</h3>
+        <form class="form" action="#">
+
+          <label class="form__label form__label_column">
+            <div class="form__label-text">Text:</div>
+            <input class="form__text" type="text">
+          </label>
+
+          <label class="form__label form__label_column">
+            <div class="form__label-text">Select:</div>
+            <select class="form__select" name="select" id="select">
+              <option value="option">Option</option>
+            </select>
+          </label>
+          <label class="form__label form__label_row">
+            <input class="form__checkbox" type="checkbox">
+            <div class="form__label-text-checkbox">Sed ut perspiciatis unde omnis iste natus</div>
+          </label>
+
+          <label class="form__label form__label_row">
+            <input class="form__checkbox" type="radio">
+            <div class="form__label-text-checkbox">Lorem ipsum dolor sit amet, consectetur</div>
+          </label>
+
+          <label class="form__label form__label_column">
+            <div class="form__label-text">Textarea:</div>
+            <textarea class="form__textarea" name="textarea" id="textarea" cols="30" rows="10"></textarea>
+          </label>
+          <label class="form__buttom-group">
+            <button class="form__button">Button</button>
+          </label>
+        </form>
+      </section>
+    </article>
+    <footer class="footer">
+      <p>© Footer content <a href="#">footer link</a></p>
+    </footer>
   </div>
-  <article class="article">
-    <section class="article__lead">
-      <h1>What we do</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Beatae ratione illum, eius consectetur saepe et culpa officia sed iste laborum
-        quisquam, recusandae <em>laboriosam voluptatem libero</em> cupiditate,
-        exercitationem excepturi consequuntur magni nulla quis corrupti!
-        Impedit, laboriosam aut mollitia tenetur eveniet aspernatur enim!
-        <strong> Quis ipsam, commodi nam aperiam id voluptate</strong> praesentium maxime?</p>
-      <blockqoute>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, id.</blockqoute>
-    </section>
-    <section class="article__gallery">
-      <h3>Images</h3>
-      <div class="gallery">
-        <div class="gallery__wrapper"><img class="gallery__image" src="./img/img1.jpg" alt=""></div>
-        <div class="gallery__wrapper"><img class="gallery__image" src="./img/img2.jpg" alt=""></div>
-        <div class="gallery__wrapper"><img class="gallery__image" src="./img/img3.jpg" alt=""></div>
-        <div class="gallery__wrapper"><img class="gallery__image" src="./img/img4.jpg" alt=""></div>
-      </div>
-    </section>
-    <section class="article__lists">
-      <h3>Lists and Descriptions</h3>
-      <ul>
-        <li>Sed ut perspiciatis unde omnis iste natus</li>
-        <li>Lorem ipsum dolor sit amet, consectetur</li>
-        <li>At vero eos et accusamus et iusto odio</li>
-        <li>Et harum quidem rerum facilis est</li>
-      </ul>
+  <div class="easter-egg animated infinite tada delay-1s"></div>
+  <!-- <script src="js/vendor/modernizr-3.7.1.min.js"></script>-->
 
-      <ol>
-        <li>Sed ut perspiciatis unde omnis iste natus</li>
-        <li>Lorem ipsum dolor sit amet, consectetur</li>
-        <li>At vero eos et accusamus et iusto odio</li>
-        <li>Et harum quidem rerum facilis est</li>
-      </ol>
-      <dl>
-        <dt>Sed ut perspiciatis unde omnis iste natus</dt>
-        <dd>Lorem ipsum dolor sit amet, consectetur</dd>
-        <dt>At vero eos et accusamus et iusto odio</dt>
-        <dd>Et harum quidem rerum facilis est</dd>
-      </dl>
-
-    </section>
-
-
-    <section class="article__table">
-      <h3>Table</h3>
-      <!-- <table>
-        <thead>
-          <tr>
-            <th>Lorem</th>
-            <th>Sed ut perspiciatis unde1</th>
-            <th>Sed ut perspiciatis unde2</th>
-            <th>Sed ut perspiciatis unde3</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-          </tr>
-          <tr>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-          </tr>
-          <tr>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-          </tr>
-          <tr>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-            <td>At vero eos et</td>
-          </tr>
-        </tbody>
-      </table> -->
-
-    </section>
-    <section class="article__form">
-      <h3>Forms</h3>
-      <form class="form" action="#">
-
-        <label class="form__label form__label_column">
-          <div class="form__label-text">Text:</div>
-          <input class="form__text" type="text">
-        </label>
-
-        <label class="form__label form__label_column">
-          <div class="form__label-text">Select:</div>
-          <select class="form__select" name="select" id="select">
-            <option value="option">Option</option>
-          </select>
-        </label>
-        <label class="form__label form__label_row">
-          <input class="form__checkbox" type="checkbox">
-          <div class="form__label-text-checkbox">Sed ut perspiciatis unde omnis iste natus</div>
-        </label>
-
-        <label class="form__label form__label_row">
-          <input class="form__checkbox" type="radio">
-          <div class="form__label-text-checkbox">Lorem ipsum dolor sit amet, consectetur</div>
-        </label>
-
-        <label class="form__label form__label_column">
-          <div class="form__label-text">Textarea:</div>
-          <textarea class="form__textarea" name="textarea" id="textarea" cols="30" rows="10"></textarea>
-        </label>
-        <label class="form__label form__label_row form__label_justify-center ">
-          <button class="form__button">Button</button>
-        </label>
-      </form>
-    </section>
-  </article>
-
-  <!-- <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script> -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.js"></script>
 
 
